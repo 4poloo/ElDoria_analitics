@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  eldoria:
+    build: .
+    volumes:
+      - ./data:/app/data
+      - ./outputs:/app/outputs
+    environment:
+      - OMP_NUM_THREADS=8
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 8G

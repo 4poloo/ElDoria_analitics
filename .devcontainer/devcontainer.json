@@ -1,0 +1,19 @@
+{
+    "name": "Eldoria Analytics",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "runArgs": [
+        "--cpus=8",
+        "--memory=8g"
+    ],
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-python.python"
+    ],
+    "remoteUser": "root"
+}
